@@ -1,0 +1,340 @@
+table
+{
+    border-collapse: collapse;
+    width: 100%;
+    /* Les bordures du tableau seront collées (plus joli) */
+}
+.table th {
+    height: 9vh;
+}
+.table td /* Toutes les cellules des tableaux... */
+{
+   border-bottom: 2px solid #f6f6f6;
+   height: 8vh;
+   text-align: center;
+}
+.code{
+    width: 10%;
+}
+.nom_produit{
+    width: 10%;
+}
+.categorie{
+    width: 10%;
+}
+.statut{
+    width: 10%;
+}
+.description{
+    width: 20%;
+}
+.image{
+    width: 20%;
+}
+.image_div img{
+    width: 40%;
+    height: 30vh;
+}
+.action_button{
+    width: 20%;
+    align-items: center;
+}
+table tbody .image_div {
+    /* height: 8vh; */
+    width: 100%;
+    overflow: hidden;
+    padding: 0.2em;
+}
+table tbody .image_div img {
+    width: 100%;
+    width: 100%;
+}
+table tbody .nom_prod {
+    padding-left: 0.5em;
+    text-align: left;
+}
+.form_category {
+    display: flex;
+    justify-content: center;
+}
+
+ .category_div {
+    background: white;
+    padding: 1.2em;
+    margin: 2em 0;
+}
+.category_div .cat_titre {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.2em;
+
+}
+.category_div .category_element {
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    align-items: center;
+}
+.category_div .category_element .category_nb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 12%;
+}
+.category_div .category_element .category_nb select {
+    width: 45%;
+    height: 4vh;
+    outline-color: blue;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.category_div .category_element .category_search {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.category_div .category_element .category_search input {
+    height: 5vh;
+    border-radius: 3px 0 0 3px;
+    border: 2px solid #f6f6f6;
+    width: 75%;
+    padding-left: 0.8em;
+    outline-color: black;
+}
+.category_div .category_element .category_search button {
+    width: 25%;
+    height: 5vh;
+    border: none;
+    font-size: 1.1em;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    background: black;
+   
+}
+.category_div .category_element .add_new {
+    height: 6vh;
+    background: rgba(255, 68, 0, 0.855);
+    width: 15%;
+    display: flex;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+}
+.category_div .category_element .add_lien {
+    text-decoration: none;
+    color: white;
+}
+table
+{
+   border-collapse: collapse;
+   width: 100%;
+   /* Les bordures du tableau seront collées (plus joli) */
+}
+.table th {
+    height: 9vh;
+}
+.table td /* Toutes les cellules des tableaux... */
+{
+   border-bottom: 2px solid #f6f6f6;
+   height: 8vh;
+   text-align: center;
+}
+
+.table thead {
+    background: rgba(0, 0, 0, 0.737);
+    color: white;
+    
+}
+td .conf{
+    padding: 0.5em;
+    border-radius: 2em;
+    background: red;
+    color: white;
+    
+}
+
+td .annu{
+    padding: 0.5em;
+    border-radius: 2em;
+    background: blue;
+    color: white;
+}
+
+
+.table .tbody td .modifier_cat {
+    text-decoration: none;
+    font-weight: 500;
+    background: green;
+    color: white;
+    padding: 0.5em;
+    border-radius: 2em;
+}
+.sup {
+   background: red;
+}
+.grande_div{
+    width: 90%;
+    top: 3em;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+}
+.petit{
+    width: 50%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 3em;
+}
+.modifi_img img{
+    width: 100%;
+    height: 55vh;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 1em;
+}
+.togget{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+.enregistrer{
+    padding: 1em;
+    border-radius: 1em;
+    height: 6vh;
+    color: white;
+    background: rgba(243, 68, 4, 0.901);
+   font-weight: bold;
+   font-size: 0.6em;
+}
+.annuler{
+    padding: 1em;
+    border-radius: 1em;
+    height: 6vh;
+    color: white;
+    background: black;
+   font-weight: bold;
+   font-size: 0.6em;
+}
+
+.entete{
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin-bottom: 7px;
+}
+
+
+/*toggle*/
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 2.5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /*form*/
+.formulaire{
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+   
+}
+.lab{
+    display: flex;
+    flex-direction: column;
+    
+}
+label{
+    font-size: 1.3em;
+    color: black;
+
+}
+.lab input, textarea{
+    width: 100%;
+    border: 1.5px solid black;
+    height: 6vh;
+    border-radius: 3px;
+    margin: 5px;
+}
+textarea{
+    height: 30vh;
+}
+.lab2{
+    width: 100%;
+    
+    display: flex;
+   justify-content: space-between;
+   margin-top: 12px;
+
+}
+.info1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.lab2 .info1 select, .lab2 .info1 input{
+    width: 98%;
+    border: 1.5px solid black;
+    height: 4vh;
+    border-radius: 3px;
+    margin: 5px;
+}
+.file{
+    margin: 15px;
+}
